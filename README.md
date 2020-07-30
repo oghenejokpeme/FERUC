@@ -12,6 +12,6 @@ _Note_: The output performance files are named as follows 'experiment type'--'nu
 In the regression performance files, the first row is the name of the gene, followed by the R squared, mean square error, and root mean square error. 
 The classification performance found in /output/performance/ is the mean performance for each gene which can be found in /output/performance/all_class. These results follow the above naming convention, however, "cls" is replaced with the gene name.
 
-Given the number and size of models, it might be useful to disable model logging. This can be done by uncommenting line 284 (`log_models(models, gene, nbins, type)`).
+Given the number and size of models, it might be useful to disable model logging. This can be done by commenting out line 284 (`log_models(models, gene, nbins, type)`).
 
 The experiments were performed in R 3.4.4, and require the following libraries: data.table, ranger, smotefamily, caret and arules.
